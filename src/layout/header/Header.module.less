@@ -1,0 +1,50 @@
+
+.header {
+  width: 100%;
+  height: 60px;
+  margin: 0 auto;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+
+  .headercards {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid red;
+    border-radius: 5px;
+
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: auto;
+  }
+
+  .card {
+    flex-shrink: 0;
+    width: 100px;
+    height: 50px;
+    background-color: #5796f8;
+    border-radius: 5px;
+    margin-left: 20px;
+    color: #fff;
+  }
+
+  .headercards::-webkit-scrollbar {
+    display: none; /* 隐藏滚动条 */
+  }
+
+  .current{
+    width: 20%;
+    background-color: #fff;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+  .currentCard{
+    .card();
+    background-color: #2f6ed2;
+    margin-right: 20px;
+  }
+}

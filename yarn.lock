@@ -1209,7 +1209,7 @@
   "resolved" "https://registry.npmmirror.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz"
   "version" "0.2.3"
 
-"@craco/craco@^7.1.0":
+"@craco/craco@^6 || ^7", "@craco/craco@^7.1.0":
   "integrity" "sha512-oRAcPIKYrfPXp9rSzlsDNeOaVtDiKhoyqSXUoqiK24jCkHr4T8m/a2f74yXIzCbIheoUWDOIfWZyRgFgT+cpqA=="
   "resolved" "https://registry.npmmirror.com/@craco/craco/-/craco-7.1.0.tgz"
   "version" "7.1.0"
@@ -1841,6 +1841,11 @@
     "rc-motion" "^2.0.0"
     "rc-resize-observer" "^1.3.1"
     "rc-util" "^5.38.0"
+
+"@remix-run/router@1.16.0":
+  "integrity" "sha512-Quz1KOffeEf/zwkCBM3kBtH4ZoZ+pT3xIXBG4PPW/XFtDP7EGhtTiC2+gpL9GnR7+Qdet5Oa6cYSvwKYg6kN9Q=="
+  "resolved" "https://registry.npmmirror.com/@remix-run/router/-/router-1.16.0.tgz"
+  "version" "1.16.0"
 
 "@rollup/plugin-babel@^5.2.0":
   "integrity" "sha512-WFfdLWU/xVWKeRQnKmIAQULUI7Il0gZnBIH/ZFO069wYIfPu+8zrfp/KMW0atmELoRDq8FbiP3VCss9MhCut7Q=="
@@ -3773,6 +3778,14 @@
     "parse-json" "^5.0.0"
     "path-type" "^4.0.0"
     "yaml" "^1.10.0"
+
+"craco-less@^3.0.1":
+  "integrity" "sha512-w4aDZYI1MTbK6DaKBvw6E8bgO1HgXmjRx5MNwOxzoFyPfpgamxiZOGyxnlvkAfYe2Q3LkSK1GcRRi8teyweBsQ=="
+  "resolved" "https://registry.npmmirror.com/craco-less/-/craco-less-3.0.1.tgz"
+  "version" "3.0.1"
+  dependencies:
+    "less" "^4.1.3"
+    "less-loader" "^11.1.3"
 
 "create-require@^1.1.0":
   "integrity" "sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ=="
@@ -6781,12 +6794,17 @@
     "picocolors" "^1.0.0"
     "shell-quote" "^1.8.1"
 
+"less-loader@^11.1.3":
+  "integrity" "sha512-6/GrYaB6QcW6Vj+/9ZPgKKs6G10YZai/l/eJ4SLwbzqNTBsAqt5hSLVF47TgsiBxV1P6eAU0GYRH3YRuQU9V3A=="
+  "resolved" "https://registry.npmmirror.com/less-loader/-/less-loader-11.1.4.tgz"
+  "version" "11.1.4"
+
 "less-loader@^12.2.0":
   "integrity" "sha512-MYUxjSQSBUQmowc0l5nPieOYwMzGPUaTzB6inNW/bdPEG9zOL3eAAD1Qw5ZxSPk7we5dMojHwNODYMV1hq4EVg=="
   "resolved" "https://registry.npmmirror.com/less-loader/-/less-loader-12.2.0.tgz"
   "version" "12.2.0"
 
-"less@^3.5.0 || ^4.0.0", "less@^4.2.0":
+"less@^3.5.0 || ^4.0.0", "less@^4.1.3", "less@^4.2.0":
   "integrity" "sha512-P3b3HJDBtSzsXUl0im2L7gTO5Ubg8mEN6G8qoTS77iXxXX4Hvu4Qj540PZDvQ8V6DmX6iXo98k7Md0Cm1PrLaA=="
   "resolved" "https://registry.npmmirror.com/less/-/less-4.2.0.tgz"
   "version" "4.2.0"
@@ -8697,7 +8715,7 @@
     "strip-ansi" "^6.0.1"
     "text-table" "^0.2.0"
 
-"react-dom@*", "react-dom@^18.0.0", "react-dom@^18.3.1", "react-dom@>=16.0.0", "react-dom@>=16.11.0", "react-dom@>=16.9.0":
+"react-dom@*", "react-dom@^18.0.0", "react-dom@^18.3.1", "react-dom@>=16.0.0", "react-dom@>=16.11.0", "react-dom@>=16.8", "react-dom@>=16.9.0":
   "integrity" "sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw=="
   "resolved" "https://registry.npmmirror.com/react-dom/-/react-dom-18.3.1.tgz"
   "version" "18.3.1"
@@ -8730,7 +8748,22 @@
   "resolved" "https://registry.npmmirror.com/react-refresh/-/react-refresh-0.11.0.tgz"
   "version" "0.11.0"
 
-"react-scripts@^5.0.0", "react-scripts@5.0.1":
+"react-router-dom@^6.23.0":
+  "integrity" "sha512-Q9YaSYvubwgbal2c9DJKfx6hTNoBp3iJDsl+Duva/DwxoJH+OTXkxGpql4iUK2sla/8z4RpjAm6EWx1qUDuopQ=="
+  "resolved" "https://registry.npmmirror.com/react-router-dom/-/react-router-dom-6.23.0.tgz"
+  "version" "6.23.0"
+  dependencies:
+    "@remix-run/router" "1.16.0"
+    "react-router" "6.23.0"
+
+"react-router@6.23.0":
+  "integrity" "sha512-wPMZ8S2TuPadH0sF5irFGjkNLIcRvOSaEe7v+JER8508dyJumm6XZB1u5kztlX0RVq6AzRVndzqcUh6sFIauzA=="
+  "resolved" "https://registry.npmmirror.com/react-router/-/react-router-6.23.0.tgz"
+  "version" "6.23.0"
+  dependencies:
+    "@remix-run/router" "1.16.0"
+
+"react-scripts@^5", "react-scripts@^5.0.0", "react-scripts@5.0.1":
   "integrity" "sha512-8VAmEm/ZAwQzJ+GOMLbBsTdDKOpuZh7RPs0UymvBR2vRk4iZWCskjbFnxqjrzoIvlNNRZ3QJFx6/qDSi6zSnaQ=="
   "resolved" "https://registry.npmmirror.com/react-scripts/-/react-scripts-5.0.1.tgz"
   "version" "5.0.1"
@@ -8785,7 +8818,7 @@
   optionalDependencies:
     "fsevents" "^2.3.2"
 
-"react@*", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^18.0.0", "react@^18.3.1", "react@>= 16", "react@>=16.0.0", "react@>=16.11.0", "react@>=16.9.0":
+"react@*", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^18.0.0", "react@^18.3.1", "react@>= 16", "react@>=16.0.0", "react@>=16.11.0", "react@>=16.8", "react@>=16.9.0":
   "integrity" "sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ=="
   "resolved" "https://registry.npmmirror.com/react/-/react-18.3.1.tgz"
   "version" "18.3.1"
